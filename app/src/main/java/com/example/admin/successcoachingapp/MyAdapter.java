@@ -13,7 +13,9 @@ import android.widget.TextView;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.OurStaffViewHolder>{
    String[] names;
-    public MyAdapter(String[] names) {
+    private ListItemClickListener listItemClickListener;
+    public MyAdapter(String[] names, ListItemClickListener listItemClickListener) {
+        this.listItemClickListener = listItemClickListener;
         this.names = names;
     }
 
@@ -37,11 +39,22 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.OurStaffViewHolder
     public int getItemCount() {
         return names.length;
     }
-    class OurStaffViewHolder extends RecyclerView.ViewHolder {
+
+
+    class OurStaffViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView stafftv;
         public OurStaffViewHolder(View itemView) {
             super(itemView);
             stafftv = (TextView)itemView.findViewById(R.id.staff_name_tv);
+            itemView.setOnClickListener(this);
         }
+
+        @Override
+        public void onClick(View view) {
+            listItemClickListener.onListItemClicked(getAdapterPosition());
+        }
+    }
+    public interface ListItemClickListener{
+        void onListItemClicked(int index);
     }
 }
