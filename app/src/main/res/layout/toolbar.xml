@@ -1,45 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.v7.widget.Toolbar
-    android:id="@+id/toolbar"
-    android:fitsSystemWindows="true"
-    android:background="#6B8E23"
-    android:layout_width="match_parent"
-    android:layout_height="40dp"
-    android:minHeight="30dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:adndroid="http://schemas.android.com/apk/res-auto">
-
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="#6B8E23"
+    app:titleTextColor="#ffffff" >
     <RelativeLayout
-        android:gravity="right"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="STAFF"
-            android:id="@+id/title"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:textSize="19sp"
-            android:textColor="#ffffff"/>
-        <LinearLayout
-            android:layout_centerVertical="true"
-
-            android:id="@+id/dashboard"
-            android:layout_marginRight="10dp"
-            android:orientation="horizontal"
-            android:layout_alignParentEnd="true"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true">
-
-            <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:src="@drawable/ic_home_button"/>
-
-        </LinearLayout>
-
-
+        android:gravity="end"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/homewhite"/>
     </RelativeLayout>
-</android.support.v7.widget.Toolbar>
+    </android.support.v7.widget.Toolbar>
