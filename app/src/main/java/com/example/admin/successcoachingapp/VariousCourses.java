@@ -82,7 +82,7 @@ public class VariousCourses extends AppCompatActivity{
                 break;
 
         }
-        titleView=toolbar.findViewById(R.id.title);
+        titleView= (TextView) toolbar.findViewById(R.id.title);
         titleView.setText(title);
         setSupportActionBar(toolbar);
 
