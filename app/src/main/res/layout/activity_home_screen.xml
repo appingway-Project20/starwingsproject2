@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-
     tools:context="com.example.admin.successcoachingapp.OurStaffActivity">
+    <include layout="@layout/toolbar"/>
     <!--<ImageView-->
         <!--android:layout_width="wrap_content"-->
         <!--android:layout_height="108dp"-->
@@ -14,33 +14,39 @@
         <!--android:id="@+id/image"/>-->
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="137dp"
         android:orientation="horizontal"
         android:id="@+id/header">
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_width="238dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="COACHING CENTRE"
+                android:paddingLeft="15dp"
+                android:gravity="center"
                 android:textColor="#00FF00"
-                android:textSize="24sp"/>
+                android:textSize="24sp"
+                android:layout_weight="0.80" />
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="42sp"
                 android:text="SUCCESS"
+                android:gravity="center"
                 android:textColor="#FFA500"
                 android:textStyle="bold"
                 android:layout_marginLeft="8dp"/>
         </LinearLayout>
 
         <ImageView
-            android:layout_width="108dp"
+            android:layout_width="140dp"
             android:layout_height="108dp"
             android:backgroundTintMode="src_atop"
+            android:paddingRight="15dp"
             android:src="@drawable/ic_graduate_hat"/>
 
     </LinearLayout>
@@ -64,6 +70,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="#FFFFFF"
+                android:id="@+id/tvAboutUs"
                 android:text="ABOUT US"
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
@@ -85,6 +92,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="#FFFFFF"
                 android:text="COURSES"
+                android:id="@+id/tvCourses"
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
                 android:textSize="32sp"
@@ -106,12 +114,19 @@
                 android:layout_height="wrap_content"
                 android:textColor="#FFFFFF"
                 android:text="OUR STAFF"
+                android:id="@+id/tvStaff"
                 android:textStyle="bold"
                 android:layout_gravity="center_vertical"
                 android:textSize="32sp"
                 android:layout_weight="1"/>
         </LinearLayout>
     </LinearLayout>
+  <RelativeLayout
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content">
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -124,12 +139,13 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_weight="1">
+
             <ImageView
+                android:id="@+id/ivTestimonial"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/ic_chat"
-                android:id="@+id/ivTestimonial"
-                />
+                android:src="@drawable/ic_chat" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -204,4 +220,5 @@
                 android:text="Locate Us"/>
         </LinearLayout>
     </LinearLayout>
-</RelativeLayout>
+  </RelativeLayout>
+</LinearLayout>

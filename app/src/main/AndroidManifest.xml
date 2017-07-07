@@ -25,6 +25,11 @@
             android:name=".StaffActivity"
             android:parentActivityName=".OurStaffActivity"></activity>
         <activity android:name=".SplashScreen"></activity>
+        <activity android:name=".Courses"/>
+        <activity android:name=".TestimonialActivity"/>
+        <activity android:name=".GalleryActivity"/>
+        <activity android:name=".AboutUsActivity"/>
+        <activity android:name=".VariousCourses"/>
     </application>
 
 </manifest>
