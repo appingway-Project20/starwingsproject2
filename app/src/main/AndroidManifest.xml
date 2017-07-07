@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.admin.successcoachingapp">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,68 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".OurStaffActivity"
+            android:launchMode="singleTop">
+
+        </activity>
         <activity android:name=".HomeScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".OurStaffActivity">
-            <intent-filter>
-                <action android:name="com.example.admin.successcoachingapp.OURSTAFFACTIVITY" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".StaffActivity">
-            <intent-filter>
-                <action android:name="com.example.admin.successcoachingapp.STAFFACTIVITY" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".AboutUsActivity" >
-            <intent-filter>
-                <action android:name="com.example.admin.successcoachingapp.ABOUTUSACTIVITY" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".GalleryActivity">
-            <intent-filter>
-                <action android:name="com.example.admin.successcoachingapp.GALLERYACTIVITY" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".TestimonialActivity" >
-            <intent-filter>
-                <action android:name="com.example.admin.successcoachingapp.TESTIMONIALACTIVITY" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".TestimonialDetailActivity" >
-            <intent-filter>
-                <action android:name="com.example.admin.successcoachingapp.TESTIMONIALDETAILACTIVITY" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
-        <activity android:name=".Courses">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.DEFAULT"/>
-            </intent-filter>
-        </activity>
-        <activity android:name=".VariousCourses">
-            <intent-filter>
-                <action android:name="com.example.admin.successcoachingapp.VARIOUSCOURSES" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-
+        <activity
+            android:name=".StaffActivity"
+            android:parentActivityName=".OurStaffActivity"></activity>
+        <activity android:name=".SplashScreen"></activity>
     </application>
 
 </manifest>
