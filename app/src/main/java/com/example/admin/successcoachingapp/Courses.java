@@ -10,6 +10,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -23,7 +24,8 @@ public class Courses extends AppCompatActivity implements CoursesAdapter.ListIte
     private DividerItemDecoration mDividerItemDecoration;
     Toolbar toolbar;
     TextView titleView;
-    ImageView testimonial,gallery,qr,map;
+    Button back;
+    ImageView testimonial,gallery,qr,map,home;
     String[] coursesnames={"General English Courses","IELTS","Business English Courses","BULATS","TOEFL","TOEIC","GED","SAT","IGCSE","GMAT","GRE"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +49,8 @@ public class Courses extends AppCompatActivity implements CoursesAdapter.ListIte
         gallery.setOnClickListener(this);
         qr.setOnClickListener(this);
         map.setOnClickListener(this);
+        back.setOnClickListener(this);
+        home.setOnClickListener(this);
     }
 
     public void init() {
@@ -56,11 +60,13 @@ public class Courses extends AppCompatActivity implements CoursesAdapter.ListIte
         gallery= (ImageView) findViewById(R.id.ivGallery);
         qr= (ImageView) findViewById(R.id.ivQrCodes);
         map= (ImageView) findViewById(R.id.ivMap);
+        back= (Button) findViewById(R.id.back_button);
+        home= (ImageView) findViewById(R.id.ivHome);
     }
 
     @Override
     public void onListItemClicked(int index) {
-        Intent intent =new Intent(Courses.this, VariousCourses.class);
+        Intent intent = new Intent(Courses.this, VariousCourses.class);
         intent.putExtra("index",index);
         startActivity(intent);
     }
@@ -93,6 +99,13 @@ public class Courses extends AppCompatActivity implements CoursesAdapter.ListIte
                 break;
             case R.id.ivMap:
 
+                break;
+            case R.id.ivHome:
+                i=new Intent(Courses.this,HomeScreenActivity.class);
+                startActivity(i);
+                break;
+            case R.id.back_button:
+                finish();
                 break;
         }
     }

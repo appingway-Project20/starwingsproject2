@@ -14,7 +14,7 @@
             android:launchMode="singleTop">
 
         </activity>
-        <activity android:name=".HomeScreenActivity">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,12 +24,13 @@
         <activity
             android:name=".StaffActivity"
             android:parentActivityName=".OurStaffActivity"></activity>
-        <activity android:name=".SplashScreen"></activity>
+        <activity android:name=".HomeScreenActivity"></activity>
         <activity android:name=".Courses"/>
         <activity android:name=".TestimonialActivity"/>
         <activity android:name=".GalleryActivity"/>
         <activity android:name=".AboutUsActivity"/>
         <activity android:name=".VariousCourses"/>
+        <activity android:name=".TestimonialDetailActivity"/>
     </application>
 
 </manifest>
