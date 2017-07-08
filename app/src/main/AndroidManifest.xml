@@ -21,6 +21,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".HomeScreenActivity">
+
+        </activity>
+        <activity android:name=".AboutUsActivity" />
+        <activity android:name=".GalleryActivity" />
+        <activity android:name=".TestimonialActivity" />
+        <activity android:name=".TestimonialDetailActivity" />
         <activity
             android:name=".StaffActivity"
             android:parentActivityName=".OurStaffActivity"></activity>
