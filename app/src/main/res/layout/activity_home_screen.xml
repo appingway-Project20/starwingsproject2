@@ -5,11 +5,113 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+
     tools:context="com.example.admin.successcoachingapp.OurStaffActivity">
-    <ImageView
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="108dp"-->
+        <!--android:src="@drawable/staff_people"-->
+        <!--android:id="@+id/image"/>-->
+    <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="108dp"
-        android:src="@drawable/staff_people"/>
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/header">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COACHING CENTRE"
+                android:textColor="#00FF00"
+                android:textSize="24sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="42sp"
+                android:text="SUCCESS"
+                android:textColor="#FFA500"
+                android:textStyle="bold"
+                android:layout_marginLeft="8dp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:backgroundTintMode="src_atop"
+            android:src="@drawable/ic_graduate_hat"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/header">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FF9800">
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_hand_holding_up_a_smartphone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="ABOUT US"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textSize="32sp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#8BC34A">
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_books_piled_"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="COURSES"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textSize="32sp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:onClick="onClick"
+            android:background="#9E9D24">
+            <ImageView
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_margin="16dp"
+                android:src="@drawable/ic_reading_sign"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFFFF"
+                android:text="OUR STAFF"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textSize="32sp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
 
 
     <LinearLayout
