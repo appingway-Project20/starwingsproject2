@@ -29,6 +29,8 @@
         <activity android:name=".VariousCourses"/>
         <activity android:name=".TestimonialDetailActivity"/>
         <activity android:name=".StaffActivity" />
+        <activity android:name=".LocateUsActivity"/>
+        <activity android:name=".GalleryImage" />
     </application>
 
 </manifest>

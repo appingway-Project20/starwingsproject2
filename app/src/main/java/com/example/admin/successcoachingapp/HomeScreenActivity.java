@@ -17,7 +17,7 @@ public class HomeScreenActivity extends AppCompatActivity implements View.OnClic
 
      Toolbar toolbar;
      TextView titleView,aboutUs,staff,courses;
-     ImageView testimonial,gallery,qr,map,home;
+     ImageView testimonial,gallery,map,home;
 
      Button back;
 
@@ -32,7 +32,6 @@ public class HomeScreenActivity extends AppCompatActivity implements View.OnClic
         
         testimonial.setOnClickListener(this);
         gallery.setOnClickListener(this);
-        qr.setOnClickListener(this);
         map.setOnClickListener(this);
         aboutUs.setOnClickListener(this);
         courses.setOnClickListener(this);
@@ -51,20 +50,6 @@ public class HomeScreenActivity extends AppCompatActivity implements View.OnClic
             case R.id.ivGallery:
                 i=new Intent(HomeScreenActivity.this,GalleryActivity.class);
                 startActivity(i);
-                break;
-            case R.id.ivQrCodes:
-                i = new Intent("com.google.zxing.client.android.SCAN");
-                i.setPackage("com.google.zxing.client.android");
-                i.putExtra("SCAN_MODE", "QR_CODE_MODE");
-                PackageManager packageManager = getPackageManager();
-                List activities = packageManager.queryIntentActivities(i, PackageManager.MATCH_DEFAULT_ONLY);
-                boolean isIntentSafe = activities.size() > 0;
-                if(isIntentSafe) {
-                    startActivityForResult(i, 0);
-                }else {
-                    i = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.google.zxing.client.android"));
-                    startActivity(i);
-                }
                 break;
             case R.id.ivMap:
                     i = new Intent(HomeScreenActivity.this,LocateUsActivity.class);
@@ -96,7 +81,6 @@ public class HomeScreenActivity extends AppCompatActivity implements View.OnClic
         home= (ImageView) findViewById(R.id.ivHome);
         testimonial= (ImageView) findViewById(R.id.ivTestimonial);
         gallery= (ImageView) findViewById(R.id.ivGallery);
-        qr= (ImageView) findViewById(R.id.ivQrCodes);
         map =  (ImageView) findViewById(R.id.ivMap);
         aboutUs= (TextView) findViewById(R.id.tvAboutUs);
         courses= (TextView) findViewById(R.id.tvCourses);

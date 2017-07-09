@@ -25,7 +25,7 @@ public class Courses extends AppCompatActivity implements CoursesAdapter.ListIte
     Toolbar toolbar;
     TextView titleView;
     Button back;
-    ImageView testimonial, gallery, qr, map, home;
+    ImageView testimonial, gallery, map, home;
     String[] coursesnames = {"General English Courses", "IELTS", "Business English Courses", "BULATS", "TOEFL", "TOEIC", "GED", "SAT", "IGCSE", "GMAT", "GRE"};
 
     @Override
@@ -47,7 +47,6 @@ public class Courses extends AppCompatActivity implements CoursesAdapter.ListIte
 
         testimonial.setOnClickListener(this);
         gallery.setOnClickListener(this);
-        qr.setOnClickListener(this);
         map.setOnClickListener(this);
         back.setOnClickListener(this);
         home.setOnClickListener(this);
@@ -58,7 +57,6 @@ public class Courses extends AppCompatActivity implements CoursesAdapter.ListIte
         titleView = (TextView) toolbar.findViewById(R.id.title);
         testimonial = (ImageView) findViewById(R.id.ivTestimonial);
         gallery = (ImageView) findViewById(R.id.ivGallery);
-        qr = (ImageView) findViewById(R.id.ivQrCodes);
         map = (ImageView) findViewById(R.id.ivMap);
         back = (Button) findViewById(R.id.back_button);
         home = (ImageView) findViewById(R.id.ivHome);
@@ -83,22 +81,9 @@ public class Courses extends AppCompatActivity implements CoursesAdapter.ListIte
                 i = new Intent(Courses.this, GalleryActivity.class);
                 startActivity(i);
                 break;
-            case R.id.ivQrCodes:
-                i = new Intent("com.google.zxing.client.android.SCAN");
-                i.setPackage("com.google.zxing.client.android");
-                i.putExtra("SCAN_MODE", "QR_CODE_MODE");
-                PackageManager packageManager = getPackageManager();
-                List activities = packageManager.queryIntentActivities(i, PackageManager.MATCH_DEFAULT_ONLY);
-                boolean isIntentSafe = activities.size() > 0;
-                if (isIntentSafe) {
-                    startActivityForResult(i, 0);
-                } else {
-                    i = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.google.zxing.client.android"));
-                    startActivity(i);
-                }
-                break;
             case R.id.ivMap:
-
+                i = new Intent(Courses.this, LocateUsActivity.class);
+                startActivity(i);
                 break;
             case R.id.ivHome:
                 i = new Intent(Courses.this, HomeScreenActivity.class);
@@ -110,15 +95,4 @@ public class Courses extends AppCompatActivity implements CoursesAdapter.ListIte
         }
     }
 
-    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-        if (requestCode == 0) {
-            if (resultCode == RESULT_OK) {
-                String contents = intent.getStringExtra("SCAN_RESULT");
-                String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
-
-            } else if (resultCode == RESULT_CANCELED) {
-
-            }
-        }
-    }
 }

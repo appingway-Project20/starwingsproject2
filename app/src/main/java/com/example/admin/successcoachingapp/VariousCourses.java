@@ -20,7 +20,7 @@ public class VariousCourses extends AppCompatActivity implements View.OnClickLis
     ImageView coursesImage;
     String title;
     Button back;
-    ImageView testimonial,gallery,qr,map,home;
+    ImageView testimonial,gallery,map,home;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +32,6 @@ public class VariousCourses extends AppCompatActivity implements View.OnClickLis
         toolbar = (Toolbar)findViewById(R.id.toolbar);
         testimonial= (ImageView) findViewById(R.id.ivTestimonial);
         gallery= (ImageView) findViewById(R.id.ivGallery);
-        qr= (ImageView) findViewById(R.id.ivQrCodes);
         map= (ImageView) findViewById(R.id.ivMap);
         back= (Button) findViewById(R.id.back_button);
         home= (ImageView) findViewById(R.id.ivHome);
@@ -103,7 +102,6 @@ public class VariousCourses extends AppCompatActivity implements View.OnClickLis
 
         testimonial.setOnClickListener(this);
         gallery.setOnClickListener(this);
-        qr.setOnClickListener(this);
         map.setOnClickListener(this);
         back.setOnClickListener(this);
         home.setOnClickListener(this);
@@ -121,22 +119,9 @@ public class VariousCourses extends AppCompatActivity implements View.OnClickLis
                 i=new Intent(VariousCourses.this,GalleryActivity.class);
                 startActivity(i);
                 break;
-            case R.id.ivQrCodes:
-                i = new Intent("com.google.zxing.client.android.SCAN");
-                i.setPackage("com.google.zxing.client.android");
-                i.putExtra("SCAN_MODE", "QR_CODE_MODE");
-                PackageManager packageManager = getPackageManager();
-                List activities = packageManager.queryIntentActivities(i, PackageManager.MATCH_DEFAULT_ONLY);
-                boolean isIntentSafe = activities.size() > 0;
-                if(isIntentSafe) {
-                    startActivityForResult(i, 0);
-                }else {
-                    i = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.google.zxing.client.android"));
-                    startActivity(i);
-                }
-                break;
             case R.id.ivMap:
-
+                i=new Intent(VariousCourses.this,LocateUsActivity.class);
+                startActivity(i);
                 break;
             case R.id.ivHome:
                 i=new Intent(VariousCourses.this,HomeScreenActivity.class);
@@ -147,15 +132,5 @@ public class VariousCourses extends AppCompatActivity implements View.OnClickLis
                 break;
         }
     }
-    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-        if (requestCode == 0) {
-            if (resultCode == RESULT_OK) {
-                String contents = intent.getStringExtra("SCAN_RESULT");
-                String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
 
-            } else if (resultCode == RESULT_CANCELED) {
-
-            }
-        }
-    }
 }

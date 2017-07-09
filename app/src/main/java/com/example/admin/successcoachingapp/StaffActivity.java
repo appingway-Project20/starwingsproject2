@@ -57,8 +57,7 @@ public class StaffActivity extends AppCompatActivity {
         staffBioTv.setText(bioText);
     }
     private void initViews(){
-         staffBioTv = (TextView)findViewById(R.id.staff_bio);
-
+        staffBioTv = (TextView)findViewById(R.id.staff_bio);
         testimonialIv = (ImageView)findViewById(R.id.ivTestimonial);
         galleryIv = (ImageView)findViewById(R.id.ivGallery);
         locateUsIv = (ImageView)findViewById(R.id.ivMap);

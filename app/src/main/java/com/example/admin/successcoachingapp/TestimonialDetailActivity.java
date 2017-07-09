@@ -57,7 +57,6 @@ public class TestimonialDetailActivity extends AppCompatActivity {
 
         testimonialimg= (ImageView) findViewById(R.id.ivTestimonial);
         galleryimg= (ImageView) findViewById(R.id.ivGallery);
-        qrcode= (ImageView) findViewById(R.id.ivQrCodes);
         locateus= (ImageView) findViewById(R.id.ivMap);
         back = (Button) findViewById(R.id.back_button);
         home= (ImageView) findViewById(R.id.ivHome);
@@ -76,24 +75,7 @@ public class TestimonialDetailActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        qrcode.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i;
-                i = new Intent("com.google.zxing.client.android.SCAN");
-                i.setPackage("com.google.zxing.client.android");
-                i.putExtra("SCAN_MODE", "QR_CODE_MODE");
-                PackageManager packageManager = getPackageManager();
-                List activities = packageManager.queryIntentActivities(i, PackageManager.MATCH_DEFAULT_ONLY);
-                boolean isIntentSafe = activities.size() > 0;
-                if(isIntentSafe) {
-                    startActivityForResult(i, 0);
-                }else {
-                    i = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.google.zxing.client.android"));
-                    startActivity(i);
-                }
-            }
-        });
+
 
         locateus.setOnClickListener(new View.OnClickListener() {
             @Override

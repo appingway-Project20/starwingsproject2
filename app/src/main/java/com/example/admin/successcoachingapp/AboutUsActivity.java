@@ -15,7 +15,7 @@ import java.util.List;
 
 public class AboutUsActivity extends AppCompatActivity {
     Toolbar toolbar;
-    ImageView testimonialimg,galleryimg,qrimg,map;
+    ImageView testimonialimg,galleryimg,map;
     TextView titleView;
     Button back;
     ImageView home;
@@ -27,7 +27,7 @@ public class AboutUsActivity extends AppCompatActivity {
         toolbar= (Toolbar) findViewById(R.id.include2);
         testimonialimg= (ImageView) findViewById(R.id.testimonialimg);
         galleryimg= (ImageView) findViewById(R.id.galleryimg);
-        qrimg= (ImageView) findViewById(R.id.ivQrCodes);
+
         map= (ImageView) findViewById(R.id.ivMap);
         back= (Button) findViewById(R.id.back_button);
         home= (ImageView) findViewById(R.id.ivHome);
@@ -47,24 +47,6 @@ public class AboutUsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(AboutUsActivity.this,GalleryActivity.class);
                 startActivity(intent);
-
-            }
-        });
-        qrimg.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent("com.google.zxing.client.android.SCAN");
-                i.setPackage("com.google.zxing.client.android");
-                i.putExtra("SCAN_MODE", "QR_CODE_MODE");
-                PackageManager packageManager = getPackageManager();
-                List activities = packageManager.queryIntentActivities(i, PackageManager.MATCH_DEFAULT_ONLY);
-                boolean isIntentSafe = activities.size() > 0;
-                if(isIntentSafe) {
-                    startActivityForResult(i, 0);
-                }else {
-                    i = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.google.zxing.client.android"));
-                    startActivity(i);
-                }
 
             }
         });
@@ -93,15 +75,6 @@ public class AboutUsActivity extends AppCompatActivity {
         });
 
     }
-    public void onActivityResult(int requestCode, int resultCode, Intent intent) {
-        if (requestCode == 0) {
-            if (resultCode == RESULT_OK) {
-                String contents = intent.getStringExtra("SCAN_RESULT");
-                String format = intent.getStringExtra("SCAN_RESULT_FORMAT");
 
-            } else if (resultCode == RESULT_CANCELED) {
 
-            }
-        }
-    }
 }
