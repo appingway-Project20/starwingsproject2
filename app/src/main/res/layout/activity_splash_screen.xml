@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context="com.example.admin.successcoachingapp.SplashScreen">
-<ImageView
+  -->  <ImageView
     android:layout_width="90dp"
     android:layout_height="90dp"
     android:src="@drawable/ic_graduate_hat"
@@ -14,7 +14,9 @@
     android:layout_marginTop="220dp"
     android:layout_marginRight="4dp"
     app:layout_constraintRight_toRightOf="parent"
-    android:id="@+id/imageView" />
+    android:id="@+id/imageView"
+    android:layout_marginEnd="4dp" />
+    <!--
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,4 +47,5 @@
         app:layout_constraintTop_toBottomOf="@+id/textView"
         android:id="@+id/textView2"
         android:layout_marginTop="18dp" />
+    -->
 </android.support.constraint.ConstraintLayout>
