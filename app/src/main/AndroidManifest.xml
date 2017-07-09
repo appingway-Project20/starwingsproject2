@@ -9,6 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyApPoHmM26Vv23rasFRhj6Z5X0zgxUeIh4"/>
         <activity
             android:name=".OurStaffActivity"
             android:launchMode="singleTop">
@@ -29,8 +31,10 @@
         <activity android:name=".VariousCourses"/>
         <activity android:name=".TestimonialDetailActivity"/>
         <activity android:name=".StaffActivity" />
-        <activity android:name=".LocateUsActivity"/>
-        <activity android:name=".GalleryImage" />
+        <activity android:name=".LocateUsActivity">
+
+        </activity>
+
     </application>
 
 </manifest>
