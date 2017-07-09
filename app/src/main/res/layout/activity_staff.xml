@@ -10,7 +10,7 @@
     <include layout="@layout/toolbar"/>
     <ImageView
         android:layout_width="wrap_content"
-        android:layout_height="120dp"
+        android:layout_height="108dp"
         android:scaleType="centerCrop"
         android:id="@+id/staff_image"
         android:src="@drawable/staff_people"/>
@@ -36,6 +36,7 @@
 
 
     <LinearLayout
+        android:paddingTop="5dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -49,7 +50,6 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:id="@+id/ivTestimonial"
                 android:src="@drawable/ic_chat"
                 />
             <TextView
@@ -71,7 +71,6 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:id="@+id/ivGallery"
                 android:src="@drawable/ic_gallery"
                 />
             <TextView
@@ -115,7 +114,6 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:id="@+id/ivMap"
                 android:src="@drawable/ic_map_location"/>
             <TextView
                 android:layout_width="wrap_content"
