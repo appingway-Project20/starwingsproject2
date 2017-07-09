@@ -28,6 +28,7 @@ public class HomeScreenActivity extends AppCompatActivity implements View.OnClic
         init();
         titleView.setText("HOME");
         setSupportActionBar(toolbar);
+        
         testimonial.setOnClickListener(this);
         gallery.setOnClickListener(this);
         qr.setOnClickListener(this);

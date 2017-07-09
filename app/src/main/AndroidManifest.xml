@@ -21,9 +21,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".StaffActivity"
-            android:parentActivityName=".OurStaffActivity"></activity>
         <activity android:name=".HomeScreenActivity"></activity>
         <activity android:name=".Courses"/>
         <activity android:name=".TestimonialActivity"/>
@@ -31,6 +28,7 @@
         <activity android:name=".AboutUsActivity"/>
         <activity android:name=".VariousCourses"/>
         <activity android:name=".TestimonialDetailActivity"/>
+        <activity android:name=".StaffActivity" />
     </application>
 
 </manifest>
