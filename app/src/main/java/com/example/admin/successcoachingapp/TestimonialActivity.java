@@ -1,6 +1,5 @@
 package com.example.admin.successcoachingapp;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -25,7 +24,7 @@ public class TestimonialActivity extends AppCompatActivity implements View.OnCli
 
     Intent intent,i;
     TextView titleView;
-    ImageView testimonialimg,galleryimg;
+    ImageView testimonialimg,galleryimg,map;
     Toolbar toolbar;
     private Button back;
     private ImageView home;
@@ -52,6 +51,7 @@ public class TestimonialActivity extends AppCompatActivity implements View.OnCli
         testimonialimg= (ImageView) findViewById(R.id.testimonialimg);
         galleryimg= (ImageView) findViewById(R.id.galleryimg);
         qr= (ImageView) findViewById(R.id.ivQrCodes);
+        map = (ImageView)findViewById(R.id.ivMap);
         testimonialimg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -81,6 +81,13 @@ public class TestimonialActivity extends AppCompatActivity implements View.OnCli
                     i = new Intent(Intent.ACTION_VIEW, Uri.parse("market://details?id=com.google.zxing.client.android"));
                     startActivity(i);
                 }
+            }
+        });
+        map.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(TestimonialActivity.this, LocateUsActivity.class);
+                startActivity(intent);
             }
         });
 

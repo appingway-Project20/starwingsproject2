@@ -72,7 +72,8 @@ public class AboutUsActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-
+            Intent intent = new Intent(AboutUsActivity.this, LocateUsActivity.class);
+                startActivity(intent);
             }
         });
         back.setOnClickListener(new View.OnClickListener() {

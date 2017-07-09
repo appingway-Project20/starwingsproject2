@@ -6,9 +6,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.admin.successcoachingapp.OurStaffActivity">
+    <include layout="@layout/toolbar2"
+        android:id="@+id/toolbar2"/>
     <ImageView
     android:layout_width="wrap_content"
-    android:layout_height="108dp"
+    android:layout_height="120dp"
+        android:scaleType="centerCrop"
     android:src="@drawable/staff_people"/>
     <TextView
         android:layout_width="match_parent"
@@ -40,6 +43,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:id="@+id/ivTestimonial"
                 android:src="@drawable/ic_chat"
                 />
             <TextView
@@ -61,6 +65,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:id="@+id/ivGallery"
                 android:src="@drawable/ic_gallery"
                 />
             <TextView
@@ -104,6 +109,7 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
+                android:id="@+id/ivMap"
                 android:src="@drawable/ic_map_location"/>
             <TextView
                 android:layout_width="wrap_content"

@@ -18,6 +18,7 @@ public class HomeScreenActivity extends AppCompatActivity implements View.OnClic
      Toolbar toolbar;
      TextView titleView,aboutUs,staff,courses;
      ImageView testimonial,gallery,qr,map,home;
+
      Button back;
 
     @Override
@@ -65,7 +66,8 @@ public class HomeScreenActivity extends AppCompatActivity implements View.OnClic
                 }
                 break;
             case R.id.ivMap:
-
+                    i = new Intent(HomeScreenActivity.this,LocateUsActivity.class);
+                    startActivity(i);
                 break;
             case R.id.tvAboutUs:
                 i =new Intent(HomeScreenActivity.this,AboutUsActivity.class);
@@ -94,7 +96,7 @@ public class HomeScreenActivity extends AppCompatActivity implements View.OnClic
         testimonial= (ImageView) findViewById(R.id.ivTestimonial);
         gallery= (ImageView) findViewById(R.id.ivGallery);
         qr= (ImageView) findViewById(R.id.ivQrCodes);
-        map= (ImageView) findViewById(R.id.ivMap);
+        map =  (ImageView) findViewById(R.id.ivMap);
         aboutUs= (TextView) findViewById(R.id.tvAboutUs);
         courses= (TextView) findViewById(R.id.tvCourses);
         staff= (TextView) findViewById(R.id.tvStaff);
