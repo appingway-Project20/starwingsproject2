@@ -30,7 +30,7 @@ public class CoursesAdapter extends RecyclerView.Adapter<CoursesAdapter.ViewHold
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.itemView.setText(Html.fromHtml(BULLET_SYMBOL + mCoursesnames[position]));
+        holder.itemView.setText(Html.fromHtml(BULLET_SYMBOL + " "+ mCoursesnames[position]));
         holder.itemView.setTextSize(25);
         holder.itemView.setTextColor(Color.WHITE);
         if((position==0) || (position==3) || (position==6) || (position==9)){

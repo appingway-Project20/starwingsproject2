@@ -12,8 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class OurStaffActivity extends AppCompatActivity implements MyAdapter.ListItemClickListener {
-    String[] names = {"SHAWN MATHEWS","SUZZANE PETERS","JOHN COBAIN","SHELLY NTINI","JACK WHITE",
-                        "WILL GREEN","SALLY HOUGHTON"};
+    String[] names = {"SACHIN KAUSHIK"};
     TextView staffIntrotv;
     ImageView testimonialIv, galleryIv, locateUsIv,homeIv;
     Toolbar toolbar;
@@ -77,24 +76,6 @@ public class OurStaffActivity extends AppCompatActivity implements MyAdapter.Lis
             case 0:
              intent = new Intent(OurStaffActivity.this, StaffActivity.class);
             startActivity(intent);break;
-            case 1:
-                 intent = new Intent(OurStaffActivity.this, StaffActivity.class);
-                startActivity(intent);break;
-            case 2:
-                intent = new Intent(OurStaffActivity.this, StaffActivity.class);
-                startActivity(intent);break;
-            case 3:
-                intent = new Intent(OurStaffActivity.this, StaffActivity.class);
-                startActivity(intent);break;
-            case 4:
-                intent = new Intent(OurStaffActivity.this, StaffActivity.class);
-                startActivity(intent);break;
-            case 5:
-                intent = new Intent(OurStaffActivity.this, StaffActivity.class);
-                startActivity(intent);break;
-            case 6:
-                intent = new Intent(OurStaffActivity.this, StaffActivity.class);
-                startActivity(intent);break;
             default:
                 return;
 

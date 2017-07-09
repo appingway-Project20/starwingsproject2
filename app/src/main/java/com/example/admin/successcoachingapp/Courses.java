@@ -26,7 +26,7 @@ public class Courses extends AppCompatActivity implements CoursesAdapter.ListIte
     TextView titleView;
     Button back;
     ImageView testimonial, gallery, map, home;
-    String[] coursesnames = {"General English Courses", "IELTS", "Business English Courses", "BULATS", "TOEFL", "TOEIC", "GED", "SAT", "IGCSE", "GMAT", "GRE"};
+    String[] coursesnames = {"11th CLASS ACCOUNTS", "12th CLASS ACCOUNTS"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

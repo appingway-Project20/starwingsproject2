@@ -16,21 +16,7 @@ public class StaffActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_staff);
         initViews();
-        String bioText = "Shawn Matthews" + "\n" + "School Director" + "\n\n" + "Hi there, I am " +
-                            "Shawn and I am the School Director at Success Coaching Centre." + "\n\n"
-                            + "My teaching career took its origin in Spain and ever since then, I " +
-                            "have taught in Malaysia,Thailand,Turkey,United States and currently, " +
-                            "in London.I have gained considerable knowledge and experience teaching" +
-                            "teaching all over the world nad meeting many interesting people, as well" +
-                            "as learning about different cultures." + "\n" + "Amongst the numerous " +
-                            "responsibilities I face in my job, the most important one is to make sure" +
-                            "that students enrolling in success have the most fruitful nad rewarding" +
-                            "experience. I really cherish being a part of the academic management team" +
-                            "at Success and the challenge it has to offer. My job is to work closely with" +
-                            "teachers and students alike and ensure that Success continues to pioneer" +
-                            "and prosper in the education field." + "\n\n" + "My hobbies include" +
-                            "sports and I am an avid crickt fan and love playing the sport, as well" +
-                            "as football and squash. I hope to meet with you soon";
+        String bioText = " Sachin Kaushik is a throughout first class Graduate with distinction in B.Com from Delhi University.\n He obtained 100% marks in Cost Accounting and INCOME TAX.\n Now he is pursuing in Chartered Accountant(final) as well as Company Secretary (Prof.) as well as he passed exam of MCX, NCX. Now he is working as Financial Analyst in PaisaVassoli.com (a Financial Research Company).\n He is topper in Account in XII class in his Area. He is inspired by his mother Smt. Sunita Kaushik who always motivated and encouraged him.\n His technique of approaching the subject matter, style of revision and guidelines for preparation of examination are quite popular among students.";
 
         testimonialIv.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,26 +1,6 @@
 <resources>
     <string name="app_name">SuccessCoachingApp</string>
-    <string name="aboutus_string">Success Coaching Centre is recognized as one of the
-leading names amongst test prep centres, serving to
-prepare students for examinations required for
-admissions in the top colleges or universities in the
-world. We provide in depth coaching and counselling
-for many standardised exams, including English
-courses, TOEFL, IELTS, IGCSE, GED, SAT, GMAT and
-GRE, amongst others. Students who wish to excel and
-accomplish high grades in any of these exams are
-offered individual classes or study group options for
-preparation.\n\nOur teaching faculty includes of some of the most
-experienced, well trained and certiﬁed teachers from
-top universities around the world. Students from all
-over the world, with diverse educational backgrounds
-seek our tuitions to gain the necessary skills required
-to succeed in their exams of choice.\n\nWe are located in the heart of London city, providing
-easy transport access for our students and teaching
-faculty. We provide Wi Fi facilities and the latest audio-
-visual technologies to support our teaching and
-learning resources in order to provide our students
-with maximum educational benefits and ease of study.
+    <string name="aboutus_string"> SLD Pvt. Ltd. is a venture of SACHIN KAUSHIK. SACHIN KAUSHIK started to teach in 2009 with opening a GLAMOUR CLASSES.\n SLD exclusively provides classes for commerce students.\nSLD provides face to face classes as well as satellite/virtual classes.\n It provides classes for CA, CS, B.COM, M.COM, BBA, MBA, 11th and 12th classes.\n Our prestigious faculties have been successful in an uninterrupted and dedicated task ,i.e., perfectly shaping worthy leader as excellent CA, CS, Graduation and Post-graduation, good human beings and Professionally Competent citizen.\n We work towards discovering and rejuvenating the latent potentialities of students, making them realise their untapped skills and helping them streamline their dynamism towards productive outcomes.
 </string>
     <string name="title_activity_locate_us">Map</string>
 </resources>
