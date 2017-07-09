@@ -7,9 +7,7 @@
     android:layout_height="match_parent">
     <include layout="@layout/toolbar2"
         app:layout_constraintTop_toTopOf="parent"
-
         app:layout_constraintLeft_toLeftOf="parent"
-
         app:layout_constraintRight_toRightOf="parent"
         android:id="@+id/include3" />
 
@@ -19,8 +17,6 @@
         android:layout_height="150dp"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
-
-
         android:scaleType="centerCrop"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -92,7 +88,7 @@
                 android:id="@+id/testimonialimg"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/help" />
+                android:src="@drawable/ic_chat" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -117,7 +113,7 @@
                 android:id="@+id/galleryimg"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/editwhite" />
+                android:src="@drawable/ic_gallery" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -142,7 +138,8 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/chek" />
+                android:src="@drawable/ic_qr_codes"
+                android:id="@+id/ivQrCodes"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -166,7 +163,8 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:src="@drawable/location" />
+                android:src="@drawable/ic_map_location"
+                android:id="@+id/ivMap"/>
 
             <TextView
                 android:layout_width="wrap_content"
