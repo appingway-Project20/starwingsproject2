@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -19,6 +20,8 @@ public class OurStaffActivity extends AppCompatActivity implements MyAdapter.Lis
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter adapter;
     private DividerItemDecoration mDividerItemDecoration;
+    private Button back;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,6 +69,12 @@ public class OurStaffActivity extends AppCompatActivity implements MyAdapter.Lis
                 startActivity(intent);
             }
         });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
 
     }
 
@@ -85,9 +94,11 @@ public class OurStaffActivity extends AppCompatActivity implements MyAdapter.Lis
         toolbar = (Toolbar)findViewById(R.id.toolbar2);
         mRecyclerView = (RecyclerView)findViewById(R.id.recycler_view);
         staffIntrotv = (TextView)findViewById(R.id.staff_intro);
-        homeIv = (ImageView)findViewById(R.id.ivHome);
+
         testimonialIv = (ImageView)findViewById(R.id.ivTestimonial);
         galleryIv = (ImageView)findViewById(R.id.ivGallery);
         locateUsIv = (ImageView)findViewById(R.id.ivMap);
+        back= (Button) findViewById(R.id.back_button);
+        homeIv = (ImageView)findViewById(R.id.ivHome);
     }
 }

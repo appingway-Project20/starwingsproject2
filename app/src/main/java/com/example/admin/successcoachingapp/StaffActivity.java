@@ -4,12 +4,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class StaffActivity extends AppCompatActivity {
     ImageView testimonialIv, galleryIv, locateUsIv;
     TextView staffBioTv;
+    private Button back;
+    private ImageView homeIv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +43,19 @@ public class StaffActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        homeIv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(StaffActivity.this, HomeScreenActivity.class);
+                startActivity(intent);
+            }
+        });
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
         staffBioTv.setText(bioText);
     }
     private void initViews(){
@@ -47,5 +63,7 @@ public class StaffActivity extends AppCompatActivity {
         testimonialIv = (ImageView)findViewById(R.id.ivTestimonial);
         galleryIv = (ImageView)findViewById(R.id.ivGallery);
         locateUsIv = (ImageView)findViewById(R.id.ivMap);
+        back= (Button) findViewById(R.id.back_button);
+        homeIv = (ImageView)findViewById(R.id.ivHome);
     }
 }
