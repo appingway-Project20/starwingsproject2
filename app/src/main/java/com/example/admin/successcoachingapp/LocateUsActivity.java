@@ -1,7 +1,9 @@
 package com.example.admin.successcoachingapp;
 
-import android.support.v4.app.FragmentActivity;
+import android.location.Address;
+import android.location.Geocoder;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -11,10 +13,15 @@ import com.google.android.gms.maps.UiSettings;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.io.IOException;
+import java.util.List;
+
 public class LocateUsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
     private UiSettings mapSettings;
+    double latitude;
+    double longitude;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,10 +50,24 @@ public class LocateUsActivity extends FragmentActivity implements OnMapReadyCall
         mapSettings.setZoomControlsEnabled(true);
         mapSettings.setZoomGesturesEnabled(true);
         mapSettings.setScrollGesturesEnabled(true);
+        List<Address> geocodeMatches = null;
+        try {
+            geocodeMatches =
+                    new Geocoder(this).getFromLocationName(
+                            "Najafgarh, New Delhi, Delhi 110043", 1);
+        } catch (IOException e) {
+// TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+        if (!geocodeMatches.isEmpty())
+        {
+            latitude = geocodeMatches.get(0).getLatitude();
+            longitude = geocodeMatches.get(0).getLongitude();
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        LatLng coordinates = new LatLng(latitude, longitude);
+        mMap.addMarker(new MarkerOptions().position(coordinates).title("Marker in Sydney"));
+            double zoomLevel = 16.0;
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(coordinates,(float)zoomLevel));
     }
-}
+}}
