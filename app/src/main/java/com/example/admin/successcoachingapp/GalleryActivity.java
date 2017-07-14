@@ -132,7 +132,7 @@ public class GalleryActivity extends AppCompatActivity implements GalleryAdapter
         }
         return theimage;
     }
-
+    
     @Override
     public void onListItemClicked(int index) {
         Intent intent=new Intent(GalleryActivity.this,GalleryImage.class);
