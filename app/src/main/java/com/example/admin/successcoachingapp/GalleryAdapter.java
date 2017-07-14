@@ -1,6 +1,7 @@
 package com.example.admin.successcoachingapp;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,7 +35,8 @@ public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ViewHold
     public void onBindViewHolder(GalleryAdapter.ViewHolder viewHolder, int i) {
         viewHolder.img.setScaleType(ImageView.ScaleType.CENTER_CROP);
         viewHolder.img.setImageResource((galleryList.get(i).getImage_ID()));
-
+        //viewHolder.img.setBackgroundDrawable(drawables.get(i));
+        //imgID=viewHolder.img.getId();
     }
 
     @Override
