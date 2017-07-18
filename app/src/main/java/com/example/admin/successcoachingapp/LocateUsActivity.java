@@ -66,7 +66,7 @@ public class LocateUsActivity extends FragmentActivity implements OnMapReadyCall
 
         // Add a marker in Sydney and move the camera
         LatLng coordinates = new LatLng(latitude, longitude);
-        mMap.addMarker(new MarkerOptions().position(coordinates).title("Marker in Najafgrah, New Delhi"));
+        mMap.addMarker(new MarkerOptions().position(coordinates).title("Marker in Najafgarh, New Delhi"));
             double zoomLevel = 16.0;
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(coordinates,(float)zoomLevel));
     }
