@@ -5,6 +5,8 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/logo"
+        android:hardwareAccelerated="false"
+        android:largeHeap="true"
         android:label="StarwingsApp"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
