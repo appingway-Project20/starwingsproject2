@@ -39,7 +39,7 @@
                 android:paddingBottom="10dp"
                 android:paddingLeft="10dp"
                 android:paddingTop="10dp"
-                android:text="ANTONIO"
+                android:text="Satyam yadav"
                 android:textColor="#ffffff"
                 android:textSize="20dp" />
         </LinearLayout>
@@ -71,7 +71,7 @@
                 android:paddingBottom="10dp"
                 android:paddingLeft="10dp"
                 android:paddingTop="10dp"
-                android:text="TINA"
+                android:text="Saurabh"
                 android:textColor="#ffffff"
                 android:textSize="20dp" />
         </LinearLayout>
@@ -103,7 +103,7 @@
                 android:paddingBottom="10dp"
                 android:paddingLeft="10dp"
                 android:paddingTop="10dp"
-                android:text="TOM"
+                android:text="Tanisha"
                 android:textColor="#ffffff"
                 android:textSize="20dp" />
         </LinearLayout>
@@ -136,7 +136,7 @@
                 android:paddingBottom="10dp"
                 android:paddingLeft="10dp"
                 android:paddingTop="10dp"
-                android:text="KYOKO"
+                android:text="Divya Yadav"
                 android:textColor="#ffffff"
                 android:textSize="20dp" />
         </LinearLayout>

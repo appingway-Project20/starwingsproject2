@@ -43,7 +43,7 @@ public class VariousCourses extends AppCompatActivity implements View.OnClickLis
 
         switch (getIntent().getIntExtra("index", 0)){
             case 0:
-                coursesImage.setImageResource(R.drawable.english);
+                coursesImage.setImageResource(R.drawable.logo);
                 coursesInfo2.setText("  1. Introduction of Accounting\\n\n" +
                         " 2. Accounting Terms\\n\n" +
                         " 3. ACcounting Principles and Concept\\n\n" +
@@ -60,10 +60,10 @@ public class VariousCourses extends AppCompatActivity implements View.OnClickLis
                         "14. Final Accounts\\n\n" +
                         "15. Single Entries\\n\n" +
                         "16. NPO");
-                title="11Tth CLASS ACCOUNTS";
+                title="11th CLASS ACCOUNTS";
                 break;
             case 1:
-                coursesImage.setImageResource(R.drawable.ielts);
+                coursesImage.setImageResource(R.drawable.logo);
                 coursesInfo1.setText("Partnership Accounts");
                 coursesInfo2.setText(" 1. Fundamentals of Partnership\n 2. Goodwill\n 3. Change in Profit Sharing Ratio\n 4. Admission of Partner\n 5. Retirement/Death of a Partner\n 6. Dissolution of Partnership firm");
                 coursesInfo3.setText("Company Accounts");

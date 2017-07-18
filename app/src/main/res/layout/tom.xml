@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@drawable/courses"
+        app:srcCompat="@drawable/logo"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
-android:text="I sit now, gazing at the many envelopes on my desk, containing acceptance letters from universities I had applied to. Thanks to the high scores I achieved in my SAT, all due to your excellent coaching. Thanks Success."
+android:text="Teaching ability is very good and excellent"
         android:layout_marginTop="0dp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"

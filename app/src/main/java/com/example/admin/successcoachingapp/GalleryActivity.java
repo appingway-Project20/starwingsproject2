@@ -94,7 +94,6 @@ public class GalleryActivity extends AppCompatActivity implements GalleryAdapter
         home= (ImageView) findViewById(R.id.ivHome);
         back.setOnClickListener(this);
         home.setOnClickListener(this);
-        //prepareDrawables();
 
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.imagegallery);
         recyclerView.setHasFixedSize(true);
@@ -106,22 +105,6 @@ public class GalleryActivity extends AppCompatActivity implements GalleryAdapter
 
     }
 
-    /*public void prepareDrawables() {
-        AssetManager am = this.getAssets();
-        try {
-            String[] files = am.list("images");
-            InputStream istr =null;
-            for (String file : files) {
-                istr=am.open("images/"+file);
-                Drawable d = Drawable.createFromStream(istr,null);
-                drawables.add(d);
-
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-    }*/
-
     private ArrayList<CreateList> prepareData(){
 
         ArrayList<CreateList> theimage = new ArrayList<>();
@@ -132,7 +115,7 @@ public class GalleryActivity extends AppCompatActivity implements GalleryAdapter
         }
         return theimage;
     }
-    
+
     @Override
     public void onListItemClicked(int index) {
         Intent intent=new Intent(GalleryActivity.this,GalleryImage.class);

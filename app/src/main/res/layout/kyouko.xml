@@ -18,7 +18,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:srcCompat="@drawable/courses"
+        app:srcCompat="@drawable/logo"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="0dp"
         android:layout_marginRight="0dp"
-android:text="Hi, I am Kyoko and I hail from Japan. When I came to the UK, I was lost as my English speaking skills were very poor. But due to the time I spent at Success, learning from the English courses and under the tutelage of the excellent staff, I can now speak and write quite well (as you can see). What a joy and relief to easily communicate in English."
+android:text="Interactive Classes, friendly in nature"
         android:layout_marginTop="0dp"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"

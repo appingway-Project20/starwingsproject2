@@ -33,6 +33,7 @@ public class TestimonialDetailActivity extends AppCompatActivity {
         setContentView(R.layout.testimonial_fragment);
         toolbar= (Toolbar) findViewById(R.id.include4);
         setSupportActionBar(toolbar);
+        toolbar.setTitle("Testimonials");
         FragmentManager fm = getSupportFragmentManager();
         FragmentTransaction ft = fm.beginTransaction();
         String id=getIntent().getStringExtra("name");

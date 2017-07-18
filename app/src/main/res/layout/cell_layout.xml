@@ -9,5 +9,5 @@
         android:layout_width="160dp"
         android:layout_height="100dp"
         android:layout_margin="10dp"
-        android:background="@drawable/bulats"/>
+        android:background="@drawable/logo"/>
 </LinearLayout>
