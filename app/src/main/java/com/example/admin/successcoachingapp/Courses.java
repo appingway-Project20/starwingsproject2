@@ -1,8 +1,6 @@
 package com.example.admin.successcoachingapp;
 
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
@@ -14,8 +12,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.List;
-
 
 public class Courses extends AppCompatActivity implements CoursesAdapter.ListItemClickListener, View.OnClickListener {
     private RecyclerView mRecyclerView;
@@ -26,7 +22,7 @@ public class Courses extends AppCompatActivity implements CoursesAdapter.ListIte
     TextView titleView;
     Button back;
     ImageView testimonial, gallery, map, home;
-    String[] coursesnames = {"11th CLASS ACCOUNTS", "12th CLASS ACCOUNTS"};
+    String[] coursesnames = {"11th CLASS ACCOUNTS", "12th CLASS ACCOUNTS","CA","CS","B.COM","M.COM","MBA","BBA"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

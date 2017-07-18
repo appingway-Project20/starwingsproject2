@@ -2,8 +2,7 @@ package com.example.admin.successcoachingapp;
 
 
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.net.Uri;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -11,8 +10,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import java.util.List;
 
 public class VariousCourses extends AppCompatActivity implements View.OnClickListener{
     Toolbar toolbar;
@@ -72,6 +69,81 @@ public class VariousCourses extends AppCompatActivity implements View.OnClickLis
                 coursesInfo6.setText(" 1. Financial Statements\n 2. Tools of Financial Statements\n 3. Comparative and Common Size Statements\n 4. Ratio Analysis\n 5. Cash Flow Statements");
                 title="12th CLASS ACCOUNTS";
                 break;
+            case 2:
+                coursesInfo1.setText("Overview\n");
+                coursesInfo1.setTypeface(Typeface.DEFAULT_BOLD);
+                coursesInfo1.setTextSize(17);
+
+                coursesInfo2.setText("\nIntegrated Professional Competence Course is the second level " +
+                        "of CA examination After clearing the cpt test students have to give the ipcc" +
+                        "exam. This exam is divided into two groups or sections.Both these groups can" +
+                        "be studied separately and combined\n");
+                coursesInfo3.setText("\nPractical Training or Articleship");
+                coursesInfo3.setTypeface(Typeface.DEFAULT_BOLD);
+                coursesInfo3.setTextSize(17);
+
+                coursesInfo4.setText("\nThis level of CA education focuses on the need of practical " +
+                        "knowledge along with theoreticl aspects. A student would undergo theoretical " +
+                        "education and 3 years of practical training after passing GROUP-I of IPCC/" +
+                        "Accounting Technician(Level-1).  student has to register and undergo orientation program" +
+                        "& 100 hours ITT before appearing for IPCC");
+
+                coursesInfo5.setText("FINAL OVERVIEW");
+                coursesInfo5.setTypeface(Typeface.DEFAULT_BOLD);
+                coursesInfo5.setTextSize(17);
+
+                coursesInfo6.setText("FINAL is the third level of CA examination. After clearing the " +
+                        "IPCC (both groups) students have to give the FINAL exam. This exam is " +
+                        "divided into two groups. Both these groups can be studied separately or " +
+                        "combined.");
+                break;
+            case 3:
+                coursesInfo1.setText("Foundation");
+                coursesInfo1.setTypeface(Typeface.DEFAULT_BOLD);
+                coursesInfo1.setTextSize(17);
+
+                coursesInfo2.setText("\nFoundation Programme which is of eight months duration can be" +
+                        "pursued by 10+2 pass or equivalent students of Arts, Science or Commerce " +
+                        "stream (Excluding Fine Arts)");
+
+                coursesInfo3.setText("\nExecutive");
+                coursesInfo3.setTypeface(Typeface.DEFAULT_BOLD);
+                coursesInfo3.setTextSize(17);
+
+                coursesInfo4.setText("Executive Programme can be pursued by a Graduate of all streams" +
+                        " except Fine Arts.\n");
+
+                coursesInfo5.setText("Professional\n");
+                coursesInfo5.setTypeface(Typeface.DEFAULT_BOLD);
+                coursesInfo5.setTextSize(17);
+
+                coursesInfo6.setText("Professional Programme can be pursued only after clearing the" +
+                        " Executive Programme of CS Course\n");
+
+
+                break;
+            case 4:
+                coursesImage.setImageResource(R.drawable.english);
+                coursesInfo2.setText(" 1. B.Com(H)\n2. B.Com(P)");
+                coursesInfo2.setTextSize(18);
+                break;
+            case 5:
+                coursesImage.setImageResource(R.drawable.english);
+                coursesInfo2.setText(" 1. DU\n2. Ignou");
+                coursesInfo2.setTextSize(18);
+
+            case 6:
+                coursesImage.setImageResource(R.drawable.english);
+                coursesInfo2.setText(" 1. Finance");
+                coursesInfo2.setTextSize(18);
+
+            case 7:
+                coursesImage.setImageResource(R.drawable.english);
+                coursesInfo2.setText(" 1. Finance");
+                coursesInfo2.setTextSize(18);
+
+                break;
+
             default:
                 break;
 
