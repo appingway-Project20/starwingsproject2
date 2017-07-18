@@ -1,4 +1,4 @@
-package com.example.admin.successcoachingapp;
+package com.example.admin.starwingsLearningDestination;
 
 import android.content.Intent;
 import android.os.Bundle;

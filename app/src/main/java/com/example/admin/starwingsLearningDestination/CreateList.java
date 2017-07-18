@@ -1,4 +1,4 @@
-package com.example.admin.successcoachingapp;
+package com.example.admin.starwingsLearningDestination;
 
 /**
  * Created by Lalit on 09-07-2017.

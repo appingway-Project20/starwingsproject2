@@ -1,4 +1,4 @@
-package com.example.admin.successcoachingapp;
+package com.example.admin.starwingsLearningDestination;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
