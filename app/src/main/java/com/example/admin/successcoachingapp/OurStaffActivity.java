@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 public class OurStaffActivity extends AppCompatActivity implements MyAdapter.ListItemClickListener {
     String[] names = {"SACHIN KAUSHIK"};
-    TextView staffIntrotv;
+    TextView staffIntrotv,title;
     ImageView testimonialIv, galleryIv, locateUsIv,homeIv;
     Toolbar toolbar;
     private RecyclerView mRecyclerView;
@@ -28,7 +28,6 @@ public class OurStaffActivity extends AppCompatActivity implements MyAdapter.Lis
         setContentView(R.layout.activity_main);
         initViews();
         setSupportActionBar(toolbar);
-
         staffIntrotv.setText("We are who we are because of our staff. Get a chance to learn more " +
                             "about our teachers.");
 

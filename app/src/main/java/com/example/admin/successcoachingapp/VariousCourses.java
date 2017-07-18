@@ -88,9 +88,9 @@ public class VariousCourses extends AppCompatActivity implements View.OnClickLis
                         "Accounting Technician(Level-1).  student has to register and undergo orientation program" +
                         "& 100 hours ITT before appearing for IPCC");
 
-                coursesInfo5.setText("FINAL OVERVIEW");
-                coursesInfo5.setTypeface(Typeface.DEFAULT_BOLD);
-                coursesInfo5.setTextSize(17);
+                //coursesInfo5.setText("FINAL OVERVIEW");
+                //coursesInfo5.setTypeface(Typeface.DEFAULT_BOLD);
+                //coursesInfo5.setTextSize(17);
 
                 coursesInfo6.setText("FINAL is the third level of CA examination. After clearing the " +
                         "IPCC (both groups) students have to give the FINAL exam. This exam is " +
@@ -123,22 +123,22 @@ public class VariousCourses extends AppCompatActivity implements View.OnClickLis
 
                 break;
             case 4:
-                coursesImage.setImageResource(R.drawable.english);
+                coursesImage.setImageResource(R.drawable.logo);
                 coursesInfo2.setText(" 1. B.Com(H)\n2. B.Com(P)");
                 coursesInfo2.setTextSize(18);
                 break;
             case 5:
-                coursesImage.setImageResource(R.drawable.english);
+                coursesImage.setImageResource(R.drawable.logo);
                 coursesInfo2.setText(" 1. DU\n2. Ignou");
                 coursesInfo2.setTextSize(18);
 
             case 6:
-                coursesImage.setImageResource(R.drawable.english);
+                coursesImage.setImageResource(R.drawable.logo);
                 coursesInfo2.setText(" 1. Finance");
                 coursesInfo2.setTextSize(18);
 
             case 7:
-                coursesImage.setImageResource(R.drawable.english);
+                coursesImage.setImageResource(R.drawable.logo);
                 coursesInfo2.setText(" 1. Finance");
                 coursesInfo2.setTextSize(18);
 
